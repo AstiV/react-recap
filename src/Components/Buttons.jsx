@@ -1,12 +1,10 @@
 import React from "react";
 
-const Buttons = props => {
-    return (
-        <div>
-            <button onClick={props.Add}>+</button>
-            <button onClick={props.Minus}>-</button>
-        </div>
-    );
-};
+const Buttons = ({ Add, Minus }) => (
+    <div>
+        <button onClick={Add}>+</button>
+        <button onClick={Minus}>-</button>
+    </div>
+);
 
 export default Buttons;
